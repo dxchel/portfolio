@@ -310,6 +310,112 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /*Skills CSS*/
+.skill {
+  padding: 0 0 50px 0;
+  position: relative;
+}
+.skill-box {
+  background: #151515;
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
+}
+.skill h2 {
+	font-size: 45px;
+	font-weight: 700;
+}
+.skill p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px 0 75px 0;
+}
+.skill-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.skill-slider .item img {
+  width: 50%;
+  margin: 0 auto 15px auto;
+}
+
+.skill-slider .skill {
+  width: 160px;
+  height: 160px;
+  margin: 15px auto 15px auto;
+  position: relative;
+  z-index: 0;
+}
+.skill-slider .outer {
+  width: 160px;
+  height: 160px;
+  padding: 20px;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  z-index: 0;
+}
+.skill-slider .inner {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  z-index: 0;
+}
+.skill-slider svg {
+  rotate: -73deg;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.skill-slider circle {
+  fill: none;
+  position: relative;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 450;
+  stroke-dashoffset: 450;
+  z-index: 0;
+}
+.skill-slider #circleP {
+  animation: animP 2s ease-in-out forwards;
+}
+@keyframes animP {
+  100% {
+    stroke-dashoffset: 125;
+  }
+}
+.skill-slider #circleL {
+  animation: animL 2s ease-in-out forwards;
+}
+@keyframes animL {
+  100% {
+    stroke-dashoffset: 150;
+  }
+}
+.skill-slider #circleC {
+  animation: animC 2s ease-in-out forwards;
+}
+@keyframes animC {
+  100% {
+    stroke-dashoffset: 200;
+  }
+}
+.background-skills-down {
+  top: 28%;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  background: linear-gradient(0%, #4B2C44, 100%, #322952);
+  z-index: -4;
+}
 
 /*Auto CSS*/
 .App {
