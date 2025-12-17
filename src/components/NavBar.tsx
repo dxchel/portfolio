@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import logo from '../assets/img/logo.svg'
-import socialLI from '../assets/img/socialLI.svg'
-import socialGH from '../assets/img/socialGH.svg'
-import socialGM from '../assets/img/socialGM.svg'
+import logo from '../assets/img/logo.svg';
+import socialLI from '../assets/img/socialLI.svg';
+import socialGH from '../assets/img/socialGH.svg';
+import socialGM from '../assets/img/socialGM.svg';
+import { Link, BrowserRouter as Router } from "react-router-dom";
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] =  useState('home');
@@ -42,7 +43,9 @@ export const NavBar = () => {
                             <a href="https://www.github.com/dxchel"><img src={socialGH} alt="GitHub"/></a>
                             <a href="mailto:davidxchelmh@gmail.com"><img src={socialGM} alt="Mail"/></a>
                         </div>
-                        <button className="vvd" onClick={() => console.log("Connect")}><span>Let's connect!</span></button>
+                        <Nav.Link href="#connect">
+                            <button className="vvd"><span>Let's connect!</span></button>
+                        </Nav.Link>
                     </span>
                 </Navbar.Collapse>
             </Container>
