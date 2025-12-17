@@ -6,14 +6,29 @@ export const Projects = () => {
     const projects: { title: string, description: string, imgUrl: string }[] = [
         {
             title: "Project1",
-            description: "Description1",
+            description: "Description",
             imgUrl: logo,
         },
         {
             title: "Project2",
-            description: "Description2",
+            description: "Description",
             imgUrl: logo,
-        }
+        },
+        {
+            title: "Project3",
+            description: "Description",
+            imgUrl: logo,
+        },
+        {
+            title: "Project4",
+            description: "Description",
+            imgUrl: logo,
+        },
+        {
+            title: "Project5",
+            description: "Description",
+            imgUrl: logo,
+        },
     ]
 
     return(
@@ -22,7 +37,7 @@ export const Projects = () => {
                 <Row>
                     <Col>
                         <h2>Projects</h2>
-                        <p>Here are some projects I've worked on.</p>
+                        <p>I've worked on several areas of engineering, ranging from software, electrical and even mechanical engineering. Here are some of the most important.</p>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
                             <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                 <Nav.Item>
@@ -38,7 +53,7 @@ export const Projects = () => {
                             <Tab.Pane eventKey="first">
                                 <Row>
                                     {
-                                        projects.map((project, index) => {
+                                        projects.sort(() => Math.random() - 0.5).map((project, index) => {
                                             return (<ProjectCard key={index} {...project} />)
                                         })
                                     }
