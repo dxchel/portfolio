@@ -29,12 +29,64 @@ export const Skills = () => {
             percent: 80,
         },
         {
-            skill: "Linux OS",
+            skill: "Linux OS and FS",
             percent: 70,
         },
         {
-            skill: "C++ Coding",
+            skill: "C/C++ Coding",
             percent: 60,
+        },
+        {
+            skill: "Git/GitHub",
+            percent: 60,
+        },
+        {
+            skill: "Bash scripting",
+            percent: 50,
+        },
+        {
+            skill: "Testing",
+            percent: 50,
+        },
+        {
+            skill: "Docker",
+            percent: 50,
+        },
+        {
+            skill: "React",
+            percent: 40,
+        },
+        {
+            skill: "Typescript",
+            percent: 40,
+        },
+        {
+            skill: "Verilog",
+            percent: 40,
+        },
+        {
+            skill: "Embedded systems",
+            percent: 40,
+        },
+        {
+            skill: "Java",
+            percent: 40,
+        },
+        {
+            skill: "CI/CD",
+            percent: 40,
+        },
+        {
+            skill: "AI",
+            percent: 40,
+        },
+        {
+            skill: "Cloud",
+            percent: 30,
+        },
+        {
+            skill: "Unity",
+            percent: 20,
         },
     ]
 
@@ -47,7 +99,7 @@ export const Skills = () => {
                             <h2>
                                 Skills
                             </h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit ultricies morbi, quis magna condimentum per velit auctor ultrices potenti libero, mattis congue natoque duis at mauris senectus cras. Facilisis lacus in mattis nam netus inceptos nulla nisl, dis hac vehicula ornare dui fames sed ultrices convallis, dictum aptent porttitor vivamus dictumst pellentesque rhoncus.</p>
+                            <p>Wide array of skills acquired in college, at work, and in my everyday life. Gained by following my values and always curious to learn anything with an open mind.</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 {
                                     skills.map((skill, index) => {
