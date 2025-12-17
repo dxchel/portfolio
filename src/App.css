@@ -283,17 +283,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-left: 25px;
 }
 .banner img {
-  animation: updown 3s ease-in-out infinite;
+  animation: updown 3s ease-in-out alternate infinite;
 }
 @keyframes updown {
     0% {
         transform: translateY(-20px);
     }
-    50% {
-        transform: translateY(20px);
-    }
     100% {
-        transform: translateY(-20px);
+        transform: translateY(20px);
     }
 }
 .banner .wrap {
@@ -526,6 +523,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact img {
   width: 92%;
+  animation: scaling 3s ease-in-out alternate infinite;
+}
+@keyframes scaling {
+    0% {
+        transform: scale(90%);
+    }
+    100% {
+        transform: scale(100%);
+    }
 }
 .contact h2 {
 	font-size: 45px;
