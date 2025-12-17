@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Nav } from 'react-bootstrap';
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import bannerImg from '../assets/img/banner.svg';
 import 'animate.css';
@@ -9,8 +9,8 @@ export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
-    const [delta, setDelta] = useState(370 - Math.random()*100);
-    const toRotate: Array<string> = [ "Developer", "Engineer" ]
+    const [delta, setDelta] = useState(370);
+    const toRotate: Array<string> = "Developer Engineer Tester Explorer Creative Mentor Music Video-Games Running".split(" ");
     const period: number = 1300;
 
     useEffect(() => {
@@ -32,11 +32,11 @@ export const Banner = () => {
                 setIsDeleting(false);
                 setLoopNum((loopNum + 1)%toRotate.length);
                 setDelta(370);
-            } else setDelta(delta*2/3);
+            } else setDelta(Math.max(50, delta/2));
         } else if(updatedText === fullText) {
             setIsDeleting(true);
             setDelta(period);
-        }
+        } else setDelta(370 - Math.random()*150);
     }
 
     return (
@@ -48,11 +48,10 @@ export const Banner = () => {
                         {({ isVisible }) =>
                         <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                             <span className="tagline">Welcome to my Portfolio</span>
-                            <h1>{`Hi, I'm Xchel!`}</h1>
+                            <h1>{`Hi, I'm David Xchel!`}</h1>
                             <h1><span className="wrap">{text}</span></h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit ultricies morbi, quis magna condimentum per velit auctor ultrices potenti libero, mattis congue natoque duis at mauris senectus cras. Facilisis lacus in mattis nam netus inceptos nulla nisl, dis hac vehicula ornare dui fames sed ultrices convallis, dictum aptent porttitor vivamus dictumst pellentesque rhoncus.</p>
-                            <button onClick={() => console.log('connect')}>Let's connect <ArrowRightCircle size={25} /></button>
-
+                            <p></p>
+                            <Nav.Link href='#connect'><button>Let's connect <ArrowRightCircle size={25} /></button></Nav.Link>
                         </div>}
                         </TrackVisibility>
                     </Col>
@@ -60,7 +59,7 @@ export const Banner = () => {
                         <TrackVisibility>
                             {({ isVisible }) =>
                             <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                                <img src={bannerImg} alt="Header Img"/>
+                                <img src={bannerImg} alt="https://www.reshot.com/free-svg-icons/item/worldwide-shipping-ZFBPUD562K/"/>
                             </div>}
                         </TrackVisibility>
                     </Col>
