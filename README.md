@@ -9,7 +9,7 @@ This portfolio was done using the tutorial from [Judygab](https://github.com/jud
 ``` TSX
 Portfolio/           // Core application files
 ├── src/             // Portfolio App files for react
-│   ├── assets/      // Portfolio image and font assets
+│   ├── assets/      // Portfolio image, font and resume assets
 │   └── components/  // Individual sections of portfolio
 │
 └── public/          // Misc React backup resources
