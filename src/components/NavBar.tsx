@@ -35,7 +35,7 @@ export const NavBar = () => {
                         <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => setActiveLink('skills')}>Skills</Nav.Link>
                         <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => setActiveLink('projects')}>Projects</Nav.Link>
                     </Nav>
-                    <span className={"navbar-text"}>
+                    <span className="navbar-text">
                         <div className="social-icon">
                             <a href="https://www.linkedin.com/in/david-xchel-morales-hurtado"><img src={socialLI} alt="LinkedIn"/></a>
                             <a href="https://www.github.com/dxchel"><img src={socialGH} alt="GitHub"/></a>
