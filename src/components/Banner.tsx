@@ -10,7 +10,7 @@ export const Banner = () => {
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(370);
-    const toRotate: Array<string> = "Developer Engineer Tester Explorer Creative Mentor Music Video-Games Running".split(" ");
+    const toRotate: Array<string> = "Developer Engineer Tester Explorer Creative teacher".split(" ");
     const period: number = 1300;
 
     useEffect(() => {
@@ -50,7 +50,9 @@ export const Banner = () => {
                             <span className="tagline">Welcome to my Portfolio</span>
                             <h1>{`Hi, I'm David Xchel!`}</h1>
                             <h1><span className="wrap">{text}</span></h1>
-                            <p></p>
+                            <p>I'm a very curious, Fast learning and people focused Mechatronics engineer with 4 years of professional experience in Functional Validation.</p>
+                            <p>I've always loved a good challenge, this has led me to learn a lot about very different cultures and tools, from tackling the national Math olympiad to my mobility program where I collaborated and lived with very contrasting mindsets in malaysia, I believe that all knowledge and experiences we get helps us even in the most unexpected of situations. At the same time the best thing to do with this knowledge is to share it, that way we build something far bigger than our individual goals and helps us stay connected in a world that's growing apart.</p>
+                            <p>When not working I like to find stuff to keep my mind busy, learn new things and challenge my way of thinking, but also love music, movies, video games, playing guitar, exploring, running and finding new weird details in the world.</p>
                             <Nav.Link href='#connect'><button>Let's connect <ArrowRightCircle size={25} /></button></Nav.Link>
                         </div>}
                         </TrackVisibility>
