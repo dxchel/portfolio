@@ -4,7 +4,6 @@ import logo from '../assets/img/logo.svg';
 import socialLI from '../assets/img/socialLI.svg';
 import socialGH from '../assets/img/socialGH.svg';
 import socialGM from '../assets/img/socialGM.svg';
-import { Link, BrowserRouter as Router } from "react-router-dom";
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] =  useState('home');
