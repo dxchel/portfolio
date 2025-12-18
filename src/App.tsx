@@ -9,16 +9,22 @@ import { Contact } from './components/Contact';
 import { API } from './components/API';
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
+// Background from https://www.wallpaperbat.com/
+// Project Images from https://www.pngwing.com/
+// Social Icons from https://www.svgrepo.com/
+// Banner icon from https://www.reshot.com/
+// Contact image from https://www.freepik.com/
+// Base project from https://www.github.com/judygab/web-dev-projects/
 const root = () => {
-  return (
-    <div className="App">
-        <NavBar />
-        <Banner />
-        <Skills />
-        <Projects />
-        <Contact />
-    </div>
-  )
+    return (
+        <div className="App">
+            <NavBar />
+            <Banner />
+            <Skills />
+            <Projects />
+            <Contact />
+        </div>
+    )
 }
 
 function App () {
