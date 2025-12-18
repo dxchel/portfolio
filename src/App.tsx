@@ -27,6 +27,9 @@ const root = () => {
     )
 }
 
+// @dxchel: Need to find a way for social buttons to be on another row as connect and resume in navBar
+// @dxchel: Need to find a way to add '/api' route in the future, not currently working on gh-pages
+// @dxchel: Need to find a way to make projects change size on smaller screens
 function App () {
     return (
         <Router basename={process.env.PUBLIC_URL}>

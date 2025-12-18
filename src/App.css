@@ -604,11 +604,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .App {
   text-align: center;
   background-image: url('./assets/img/banner-bg.jpg');
-  background-size: 50%;
   background-position: top center;
   background-color: #000000B8;
   background-blend-mode: darken;
-  background-size: cover;
+  background-size: 200%;
   background-repeat: repeat-y;
 }
 
