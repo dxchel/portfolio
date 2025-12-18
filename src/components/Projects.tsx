@@ -10,8 +10,11 @@ import macadamiaImg from "../assets/img/macadamia.png";
 import picImg from "../assets/img/pic.png";
 import softImg from "../assets/img/soft.png";
 import piImg from "../assets/img/pi.png";
-import fpgaImg from "../assets/img/fpga.png";
-import circuitsImg from "../assets/img/circuits.png";
+import pianoImg from "../assets/img/piano.png";
+import cardioImg from "../assets/img/cardio.png";
+import powerImg from "../assets/img/power.png";
+import protocolImg from "../assets/img/protocol.png";
+import climberImg from "../assets/img/climber.png";
 import vrImg from "../assets/img/vr.png";
 import arImg from "../assets/img/ar.png";
 import signalImg from "../assets/img/signal.png";
@@ -61,19 +64,14 @@ export const Projects = () => {
             imgUrl: piImg,
         },
         {
-            title: "PIC Projects",
-            description: "Projects using the PIC microprocessor, involved reading from several sensors, interacting with high power control circuits, speakers and lights and communicating to a phone app for monitoring the system, using Assembly and C.",
-            imgUrl: picImg,
+            title: "Pyramid VR project",
+            description: "VR project using photogrammetry and blender for modeling, and using LabView and Unity for interacting with the models. In colaboration with the Mexican National Anthropology and History Institute.",
+            imgUrl: vrImg,
         },
         {
-            title: "MIPS microprocessor",
-            description: "MIPS multicycle system designed in SystemVerilog, using the UVM testing methodology and Python/C++ for the automation of testbench creation.",
-            imgUrl: mipsImg,
-        },
-        {
-            title: "FPGA projects",
-            description: "Several FPGA implementation projects including a climber robot, an odometer, LED matrix control, Display control, VGA, I² protocol communication, motor control, among others.",
-            imgUrl: fpgaImg,
+            title: "AR pokemon finder",
+            description: "Unity project that ran on the phone, using the GPS to find pokemons in a fixed area of the real world, taken a bit further by implementing a shader for pokemons to be shown differently if they were found behind a building.",
+            imgUrl: arImg,
         },
         {
             title: "Neural Networks",
@@ -81,14 +79,39 @@ export const Projects = () => {
             imgUrl: brainImg,
         },
         {
-            title: "VR projects",
-            description: "VR projects using photogrammetry and blender for modeling, and using LabView and Unity for interacting with the models.",
-            imgUrl: vrImg,
+            title: "MIPS microprocessor",
+            description: "MIPS multicycle system designed in SystemVerilog, it got the instructions in machine language and executed the code, tested using the UVM testing methodology and Python/C++ for the automation of testbench creation.",
+            imgUrl: mipsImg,
         },
         {
-            title: "AR pokemon finder",
-            description: "Unity project that ran on the phone, using the GPS to find pokemons in a fixed area of the real world, taken a bit further by implementing a shader for pokemons to be shown differently if they were found behind a building.",
-            imgUrl: arImg,
+            title: "Protocol projects",
+            description: "FPGA projects involving protocol communication for displaying figures into a VGA display and I² communication.",
+            imgUrl: protocolImg,
+        },
+        {
+            title: "Electrocardiogram",
+            description: "Circuit using OpAmps for filtering and amplifying the signal to make an electrocardiogram and an oxymeter, with an arduino frequency counter that displayed both frequencies in a display, using SPICE for circuit design.",
+            imgUrl: cardioImg,
+        },
+        {
+            title: "4 octave piano",
+            description: "4 Octave piano program made in Assembly for PIC, created a single function that, given the correct parameters, gave the needed frequency in the octave selected.",
+            imgUrl: pianoImg,
+        },
+        {
+            title: "Sensor detectors with App communication",
+            description: "PIC circuit to detect the signal on several sensors for light, temperature and magnetism that communicated with a phone app using a bluetooth module to display readings.",
+            imgUrl: picImg,
+        },
+        {
+            title: "High power control circuits",
+            description: "High power control circuits using a series of transistors and the signal from a microcontroler.",
+            imgUrl: powerImg,
+        },
+        {
+            title: "FPGA Climber robot",
+            description: "A simple hydraulic climber robot using an FPGA module.",
+            imgUrl: climberImg,
         },
         {
             title: "Matrix operations",
@@ -100,11 +123,6 @@ export const Projects = () => {
             title: "Signal processing",
             description: "Signal processing systems using DACs, ADCs and LabView.",
             imgUrl: signalImg,
-        },
-        {
-            title: "Electrical circuits",
-            description: "Several electrical circuits projects using high power control, signal conditioning and filtering. With circuit design and simulation using SPICE. These include power control circuits, an electrocardiogram, among others.",
-            imgUrl: circuitsImg,
         },
         {
             title: "Macadamia cracker",
