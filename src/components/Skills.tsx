@@ -23,21 +23,13 @@ export const Skills = () => {
         }
     };
 
-    const skills: { skill: string, percent: number }[] = [
+    const lSkills: { skill: string, percent: number }[] = [
         {
             skill: "Python Scripting",
             percent: 80,
         },
         {
-            skill: "Linux OS and FS",
-            percent: 70,
-        },
-        {
             skill: "C/C++ Coding",
-            percent: 60,
-        },
-        {
-            skill: "Git/GitHub",
             percent: 60,
         },
         {
@@ -45,7 +37,37 @@ export const Skills = () => {
             percent: 50,
         },
         {
+            skill: "Typescript",
+            percent: 40,
+        },
+        {
+            skill: "Verilog",
+            percent: 40,
+        },
+        {
+            skill: "Java",
+            percent: 40,
+        },
+    ];
+    const tSkills: { skill: string, percent: number }[] = [
+        {
+            skill: "Linux OS and FS",
+            percent: 70,
+        },
+        {
+            skill: "Git/GitHub",
+            percent: 60,
+        },
+        {
+            skill: "Agile",
+            percent: 50,
+        },
+        {
             skill: "Testing",
+            percent: 50,
+        },
+        {
+            skill: "Debugging",
             percent: 50,
         },
         {
@@ -57,19 +79,7 @@ export const Skills = () => {
             percent: 40,
         },
         {
-            skill: "Typescript",
-            percent: 40,
-        },
-        {
-            skill: "Verilog",
-            percent: 40,
-        },
-        {
             skill: "Embedded systems",
-            percent: 40,
-        },
-        {
-            skill: "Java",
             percent: 40,
         },
         {
@@ -85,8 +95,58 @@ export const Skills = () => {
             percent: 30,
         },
         {
+            skill: "Jenkins",
+            percent: 30,
+        },
+        {
             skill: "Unity",
             percent: 20,
+        },
+    ];
+    const sSkills: { skill: string, percent: number }[] = [
+        {
+            skill: "Fast learner",
+            percent: 100,
+        },
+        {
+            skill: "Commited",
+            percent: 100,
+        },
+        {
+            skill: "Responsible",
+            percent: 100,
+        },
+        {
+            skill: "Problem Solving",
+            percent: 90,
+        },
+        {
+            skill: "Critical thinking",
+            percent: 90,
+        },
+        {
+            skill: "Adaptability",
+            percent: 90,
+        },
+        {
+            skill: "Creative",
+            percent: 85,
+        },
+        {
+            skill: "Mentoring",
+            percent: 80,
+        },
+        {
+            skill: "Leadership",
+            percent: 75,
+        },
+        {
+            skill: "Communicative",
+            percent: 75,
+        },
+        {
+            skill: "Mathematics",
+            percent: 75,
         },
     ]
 
@@ -96,13 +156,36 @@ export const Skills = () => {
                 <Row>
                     <Col>
                         <div className="skill-box">
-                            <h2>
-                                Skills
-                            </h2>
+                            <h2>Skills</h2>
                             <p>Wide array of skills acquired in college, at work, and in my everyday life. Gained by following my values and always curious to learn anything with an open mind.</p>
+                            <h3>Programming languajes</h3>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 {
-                                    skills.map((skill, index) => {
+                                    lSkills.map((skill, index) => {
+                                        return (
+                                                <SkillCard key={index} {...skill} />
+                                            )
+                                    })
+                                }
+                            </Carousel>
+                            <br/>
+                            <br/>
+                            <h3>Tools</h3>
+                            <Carousel responsive={responsive} infinite={true} className="skill-slider">
+                                {
+                                    tSkills.map((skill, index) => {
+                                        return (
+                                                <SkillCard key={index} {...skill} />
+                                            )
+                                    })
+                                }
+                            </Carousel>
+                            <br/>
+                            <br/>
+                            <h3>Soft skills</h3>
+                            <Carousel responsive={responsive} infinite={true} className="skill-slider">
+                                {
+                                    sSkills.sort(() => Math.random() - 0.5).map((skill, index) => {
                                         return (
                                                 <SkillCard key={index} {...skill} />
                                             )
