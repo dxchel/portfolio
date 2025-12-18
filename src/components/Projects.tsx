@@ -166,6 +166,7 @@ export const Projects = () => {
         },
     ]
 
+    // @dxchel: isVisible animations not working
     return(
         <section className="project" id="projects">
             <Container>
