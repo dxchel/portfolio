@@ -23,7 +23,7 @@ const root = () => {
 
 function App () {
     return (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <Routes>
                 <Route path='/' Component={root}/>
                 <Route path='/api' Component={API}/>
