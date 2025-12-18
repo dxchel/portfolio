@@ -37,9 +37,9 @@ export const NavBar = () => {
                     </Nav>
                     <span className="navbar-text">
                         <div className="social-icon">
-                            <a href="https://www.linkedin.com/in/david-xchel-morales-hurtado"><img src={socialLI} alt="LinkedIn"/></a>
-                            <a href="https://www.github.com/dxchel"><img src={socialGH} alt="GitHub"/></a>
-                            <a href="mailto:davidxchelmh@gmail.com"><img src={socialGM} alt="Mail"/></a>
+                            <a href="https://www.linkedin.com/in/david-xchel-morales-hurtado" target="_blank" rel="noopener noreferrer"><img src={socialLI} alt="LinkedIn"/></a>
+                            <a href="https://www.github.com/dxchel" target="_blank" rel="noopener noreferrer"><img src={socialGH} alt="GitHub"/></a>
+                            <a href="mailto:davidxchelmh@gmail.com" target="_blank" rel="noopener noreferrer"><img src={socialGM} alt="Mail"/></a>
                         </div>
                         <Nav.Link href="#connect">
                             <button className="nav-connect"><span>Let's connect!</span></button>
