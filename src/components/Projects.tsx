@@ -45,7 +45,7 @@ export const Projects = () => {
         },
         {
             title: "Data processing scripts",
-            description: "Several data processing scripts using wsl, bash and python for web scraping, file system search and data processing into several different formats depending on the needs.",
+            description: "Several data processing scripts using wsl, bash and python for web scraping, system management, file system search and data processing into several different formats depending on the needs.",
             imgUrl: processImg,
         },
     ]
@@ -170,9 +170,9 @@ export const Projects = () => {
                                             <Nav.Link eventKey="college">College</Nav.Link>
                                         </Nav.Item>
                                     </Nav>
-                                    <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                                    <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__fadeInLeft" : ""}>
                                         <Tab.Pane eventKey="personal">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                                            <p>I'm a tech enthusiast, always learning new technologies and tools while looking for challenges.</p>
                                             <Row>
                                                 {
                                                     pProjects.map((project, index) => {
@@ -182,7 +182,7 @@ export const Projects = () => {
                                             </Row>
                                         </Tab.Pane>
                                         <Tab.Pane eventKey="work">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                                            <p>At work I go above and beyond, making projects to make my work faster and more efficient making the management of a large batch of systems with their own information, configuration and logs easier and processing said data for reporting.</p>
                                             <Row>
                                                 {
                                                     wProjects.sort(() => Math.random() - 0.5).map((project, index) => {
@@ -192,7 +192,7 @@ export const Projects = () => {
                                             </Row>
                                         </Tab.Pane>
                                         <Tab.Pane eventKey="college">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                                            <p>In college I made a lot of projects from electrical circuits, microchips, programming, simulation, VR, AR, among others, always delivering top quality and even going the extra mile trying to find better processes or more features for a better product.</p>
                                             <Row>
                                                 {
                                                     cProjects.map((project, index) => {
