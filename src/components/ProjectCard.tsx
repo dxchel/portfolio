@@ -1,12 +1,12 @@
 import { Col } from "react-bootstrap";
 
-export const ProjectCard = ({ title, description, imgUrl }: { title: string, description: string, imgUrl: string }) => {
+export const ProjectCard = ({ title, description, imgUrl, url = '' }: { title: string, description: string, imgUrl: string, url?: string }) => {
     return (
-        <Col sm={6} mc={4}>
+        <Col size={12} sm={6} md={4}>
             <div className="proj-imgbox">
                 <img src={imgUrl} alt={title}/>
                 <div className="proj-txt">
-                    <h4>{title}</h4>
+                    <h4>{url !== '' ? <a href={url} target="_blank" rel="noopener noreferrer">{title}</a> : title }</h4>
                     <span>{description}</span>
                 </div>
             </div>
