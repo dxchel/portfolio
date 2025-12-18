@@ -10,7 +10,7 @@ export const Banner = () => {
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(370);
-    const toRotate: Array<string> = "Developer Engineer Tester Explorer Creative teacher".split(" ");
+    const toRotate: Array<string> = "Developer Engineer Tester Explorer Creative Teacher".split(" ");
     const period: number = 1300;
 
     useEffect(() => {
