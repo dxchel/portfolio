@@ -14,11 +14,13 @@ export const Banner = () => {
     const period: number = 1300;
 
     useEffect(() => {
+        // eslint-disable-next-line
         let ticker: NodeJS.Timer = setInterval(() => {
             tick();
         }, delta)
 
         return () => { clearInterval(ticker)};
+    // eslint-disable-next-line
     }, [text])
 
     const tick = () => {
