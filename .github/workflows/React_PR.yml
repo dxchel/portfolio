@@ -1,0 +1,20 @@
+name: React CI
+
+on:
+  pull_request:
+    branches:
+    - main
+
+jobs:
+  build:
+    name: Build and Test
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v6
+    - name: Install Dependencies
+      run: sudo apt update && sudo apt install npm && npm install
+    - name: Build Project
+      run: npm run build
+    - name: Run Tests
+      run: npm run test
+

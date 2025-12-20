@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Container, Row, Col, Nav } from 'react-bootstrap';
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import bannerImg from '../assets/img/banner.svg';
+import bannerImg from '../assets/img/banner.png';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -14,11 +14,13 @@ export const Banner = () => {
     const period: number = 1300;
 
     useEffect(() => {
+        // eslint-disable-next-line
         let ticker: NodeJS.Timer = setInterval(() => {
             tick();
         }, delta)
 
         return () => { clearInterval(ticker)};
+    // eslint-disable-next-line
     }, [text])
 
     const tick = () => {

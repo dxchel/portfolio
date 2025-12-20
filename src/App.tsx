@@ -7,7 +7,7 @@ import { Skills } from './components/Skills';
 import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
 import { API } from './components/API';
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router";
 
 // Background from https://www.wallpaperbat.com/
 // Project Images from https://www.pngwing.com/
