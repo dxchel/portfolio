@@ -6,15 +6,20 @@ on:
     - main
 
 jobs:
-  build:
+  build-and-deploy:
     name: Build and Test
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v6
-    - name: Install Dependencies
-      run: sudo apt update && sudo apt install npm && npm install
-    - name: Build Project
-      run: npm run build
-    - name: Run Tests
-      run: npm run test
+      - name: Checkout repository
+        uses: actions/checkout@v6
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+      - name: Install Dependencies
+        run: sudo apt update && sudo apt install npm && npm install
+      - name: Build Project
+        run: npm run build
+      - name: Run Tests
+        run: npm run test
 
