@@ -1,3 +1,6 @@
+import { TextEncoder, TextDecoder } from 'util';
+Object.assign(global, { TextDecoder, TextEncoder });
+
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
