@@ -16,7 +16,7 @@ import { CookiesProvider } from 'react-cookie';
 // Banner icon from https://www.reshot.com/
 // Contact image from https://www.freepik.com/
 // Base project from https://www.github.com/judygab/web-dev-projects/
-const root = () => {
+const root = (): React.ReactElement => {
     return (
         <div className="App">
             <NavBar />

@@ -2,7 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Carousel, { ResponsiveType } from "react-multi-carousel";
 import { SkillCard } from './SkillCard';
 
-export const Skills = () => {
+export const Skills = (): React.ReactElement => {
     const responsive: ResponsiveType = {
         superLargeDesktop: {
             // the naming can be any, depends on you.

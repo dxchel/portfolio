@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import connectImg from "../assets/img/connect.png";
 
-export const Contact = () => {
+export const Contact = (): React.ReactElement => {
     const formInitialDetails = {
         firstName: '',
         lastName: '',

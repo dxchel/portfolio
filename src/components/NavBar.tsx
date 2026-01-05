@@ -4,7 +4,7 @@ import socialLI from '../assets/img/socialLI.svg';
 import socialGH from '../assets/img/socialGH.svg';
 import socialGM from '../assets/img/socialGM.svg';
 
-export const NavBar = () => {
+export const NavBar = (): React.ReactElement => {
     const [activeLink, setActiveLink] =  useState('home');
     const [scrolled, setScrolled] = useState(false);
 

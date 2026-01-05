@@ -29,7 +29,7 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 
-export const Projects = () => {
+export const Projects = (): React.ReactElement => {
     const wProjects: { title: string, description: string, imgUrl: string }[] = [
         {
             title: "Python hardware testing",

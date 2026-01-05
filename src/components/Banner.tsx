@@ -6,7 +6,7 @@ import TrackVisibility from 'react-on-screen';
 import { useCookies } from 'react-cookie';
 import 'animate.css';
 
-export const Banner = () => {
+export const Banner = (): React.ReactElement => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');

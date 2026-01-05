@@ -2,7 +2,7 @@ import "react-multi-carousel/lib/styles.css";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
-export const SkillCard = ({ skill, percent}: { skill: string, percent: number }) => {
+export const SkillCard = ({ skill, percent}: { skill: string, percent: number }): React.ReactElement => {
     return (
         <TrackVisibility>
             {({ isVisible }) =>
