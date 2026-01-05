@@ -18,7 +18,7 @@ export const Banner = () => {
 
     useEffect(() => {
         if(!cookies.visited){
-            setCookies('visited', true, { path: '/' });
+            setCookies('visited', true, { path: '/', maxAge: 60*60*24 });
             setVisited(false);
         }
         // eslint-disable-next-line
