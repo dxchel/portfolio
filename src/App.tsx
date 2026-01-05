@@ -8,6 +8,7 @@ import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
 import { API } from './components/API';
 import { Route, BrowserRouter as Router, Routes } from "react-router";
+import { CookiesProvider } from 'react-cookie';
 
 // Background from https://www.wallpaperbat.com/
 // Project Images from https://www.pngwing.com/
@@ -33,12 +34,14 @@ const root = () => {
 // @dxchel: Need to find a way to make projects change size on smaller screens
 function App () {
     return (
-        <Router basename={process.env.PUBLIC_URL}>
-            <Routes>
-                <Route path='/' Component={root}/>
-                <Route path='/api' Component={API}/>
-            </Routes>
-        </Router>
+        <CookiesProvider defaultSetOptions={{ path: '/' }}>
+            <Router basename={process.env.PUBLIC_URL}>
+                <Routes>
+                    <Route path='/' Component={root}/>
+                    <Route path='/api' Component={API}/>
+                </Routes>
+            </Router>
+        </CookiesProvider>
     );
 }
 

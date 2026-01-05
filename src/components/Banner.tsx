@@ -2,18 +2,25 @@ import { useState, useEffect } from 'react';
 import { Container, Row, Col, Nav } from 'react-bootstrap';
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import bannerImg from '../assets/img/banner.png';
-import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { useCookies } from 'react-cookie';
+import 'animate.css';
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(370);
+    const [cookies, setCookies] = useCookies(['visited']);
+    const [visited, setVisited] = useState(true);
     const toRotate: Array<string> = "Developer Engineer Tester Explorer Creative Teacher".split(" ");
     const period: number = 1300;
 
     useEffect(() => {
+        if(!cookies.visited){
+            setCookies('visited', true, { path: '/' });
+            setVisited(false);
+        }
         // eslint-disable-next-line
         let ticker: NodeJS.Timer = setInterval(() => {
             tick();
@@ -49,7 +56,7 @@ export const Banner = () => {
                         <TrackVisibility>
                         {({ isVisible }) =>
                         <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                            <span className="tagline">Welcome to my Portfolio</span>
+                                <span className="tagline">Welcome<em>{visited ? ' back' : ' '}</em> to my Portfolio</span>
                             <h1>{`Hi, I'm David Xchel!`}</h1>
                             <h1><span className="wrap">{text}</span></h1>
                             <p>I'm a very curious, Fast learning and people focused Mechatronics engineer with 4 years of professional experience in Functional Validation.</p>
