@@ -7,5 +7,5 @@ import App from './App';
 
 test('renders learn react link', () => {
   render(<App />);
-  expect(screen.getByText(/Hi, I'm Xchel!/i)).toBeInTheDocument();
+  expect(screen.getByText(/Hi, I'm David Xchel!/i)).toBeInTheDocument();
 });
