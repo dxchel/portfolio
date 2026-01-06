@@ -186,7 +186,7 @@ export const Projects = (): React.ReactElement => {
                                             <Nav.Link eventKey="work">Work</Nav.Link>
                                         </Nav.Item>
                                         <Nav.Item>
-                                            <Nav.Link eventKey="college">College</Nav.Link>
+                                            <Nav.Link eventKey="university">University</Nav.Link>
                                         </Nav.Item>
                                     </Nav>
                                     <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__fadeInLeft" : ""}>
@@ -210,7 +210,7 @@ export const Projects = (): React.ReactElement => {
                                                 }
                                             </Row>
                                         </Tab.Pane>
-                                        <Tab.Pane eventKey="college">
+                                        <Tab.Pane eventKey="university">
                                             <p>In college I made a lot of projects from electrical circuits, microchips, programming, simulation, VR, AR, among others, always delivering top quality and even going the extra mile trying to find better processes or more features for a better product.</p>
                                             <Row>
                                                 {

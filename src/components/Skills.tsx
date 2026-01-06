@@ -158,7 +158,7 @@ export const Skills = (): React.ReactElement => {
                         <div className="skill-box">
                             <h2>Skills</h2>
                             <p>Wide array of skills acquired in college, at work, and in my everyday life. Gained by following my values and always curious to learn anything with an open mind.</p>
-                            <h3>Programming languajes</h3>
+                            <h3>Programming languages</h3>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 {
                                     lSkills.map((skill, index) => {

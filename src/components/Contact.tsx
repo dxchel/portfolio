@@ -27,7 +27,7 @@ export const Contact = (): React.ReactElement => {
             <Container>
                 <Row className="align-items-center">
                     <Col md={6}>
-                    <img className="connect-img" src={connectImg} alt="Contact me"/>
+                    <img className="connect-img" src={connectImg} alt="https://www.freepik.com/"/>
                     </Col>
                     <Col>
                         <h2>Get in touch</h2>

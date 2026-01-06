@@ -114,6 +114,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link:hover {
 .navbar-text {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .social-icon {
     display: inline-block;
